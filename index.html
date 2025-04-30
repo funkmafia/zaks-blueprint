@@ -14,8 +14,123 @@
       font-family: 'Montserrat', sans-serif;
     }
   </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-[#0D0D0D] text-[#F5F5F5]">
+<body class="bg-[#0F172A] text-[#F5F5F5]">
+    <section CLASS="min-h-screen flex flex-col justify-center items-center text-center px-4"> 
+        <!-- HERO CONTENT-->
+        <h1 class="text-2xl sm:text-4xl lg:text-6xl font-bold font-heading mb-4 leading-tight text-[#F5F5F5]">
+            Zak Hajjaji 🍊 <span class="text-[#6552D0]">Software Developer</span>
+          </h1>
+         <p class="text-xl md:text-2xl font-semibold text-[#A5A5A5] mb-2">Building with Integrity. Empowering through Innovation.</p>
+        <!--<p class="text-md md:text-lg text-gray-400 max-w-xl mb-6">Crafting digital solutions fueled by resilience, freedom, and future vision</p>
+         -->
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-6">
+            <a class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">View My Work</a>
+
+            <a class="border border-[#6552D0] text-[#6552D0] px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:text-white hover:shadow-lg hover:-translate-y-1 transform transition duration-300">Contact Me</a>
+        </div>
+        <!-- <a class="mt-10 animate-bounce text-3xl text-[#A5A5A5]">↓</a> -->
+        <div class="mt-10 animate-bounce">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#A5A5A5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6 bg-[#1A2238] text-[#F5F5F5]">
+        <div class="max-w-5xl mx-auto text-center mb-12 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#F5F5F5]">The Blueprint </h2>
+            <p class="text-[#A5A5A5] max-w-2xl mx-auto">
+                Every project is a building block. Every line of code is a blueprint for freedom, innovation, and impact - and it's all happening organically. 🌿
+            </p>
+        </div>
+
+        <!-- project grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- project card 1-->
+            <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up" data-aos-delays="100">
+                <img src="assets/The Bank Encoder.png" alt="Screenshot of the bank encoder" class="rounded-md mb-4 object-cover h-40 w-full" />
+                <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Bank Encoder</h3>
+                <p class="text-[#A5A5A5] text-sm mb-4">A JavaScript tool that encodes transaction data securely with input masking, formatted strings, and output logs.</p>
+                <a href="https://funkmafia.github.io/caesar-cypher-app-/" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
+            </div>
+
+            <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up" data-aos-delays="100">
+              <img src="assets/Riddle me this screenshot.png" alt="Screenshot of Batman vs Riddler Game" class="rounded-md mb-4 object-cover h-40 w-full" />               
+              <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Batman vs Riddler Game</h3>
+              <p class="text-[#A5A5A5] text-sm mb-4">A text-based browser escape game where Batman solves riddles to catch The Riddler. Uses conditional logic, timer, and interactive flow. </p>
+              <a href="https://funkmafia.github.io/batman-vs-riddler/" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
+          </div>
+
+            <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up" data-aos-delays="100">
+                <img src="assets/calculator screenshot.png" alt="Screenshot of quick calculator" class="rounded-md mb-4 object-cover h-40 w-full" />
+                <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Simple Calculator</h3>
+                <p class="text-[#A5A5A5] text-sm mb-4">A responsive JavaScript-powered calculator with clearn styling, real-time output, and error handling.</p>
+                <a href="https://funkmafia.github.io/Calculator/" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
+            </div>
+
+            <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up" data-aos-delays="100">
+                <img src="./assets/projectname.jpg" alt="Screenshot of Project Name" class="rounded-md mb-4 object-cover h-40 w-full" />
+                <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Gym Planner App</h3>
+                <p class="text-[#A5A5A5] text-sm mb-4">A smart workout planner where users select muscle groups, build routines, and save progress using localStorage and future AI support.</p>
+                <a href="" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
+            </div>
+
+            <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up" data-aos-delays="100">
+                <img src="./assets/projectname.jpg" alt="Screenshot of Project Name" class="rounded-md mb-4 object-cover h-40 w-full" />
+                <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Secure Notes Vault</h3>
+                <p class="text-[#A5A5A5] text-sm mb-4">An encrypted note-taking app with password-protected access, localStorage support, and stylish UI animations.</p>
+                <a href="" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
+            </div>
+
+            <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up" data-aos-delays="100">
+                <img src="./assets/projectname.jpg" alt="Screenshot of Project Name" class="rounded-md mb-4 object-cover h-40 w-full" />
+                <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Client Propoasal Generator</h3>
+                <p class="text-[#A5A5A5] text-sm mb-4">A form-based tool that generates professional client proposals and lets users export them as styled PDFs; clean, simple, scalable.</p>
+                <a href="" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
+            </div>
+        </div>
+
+    </section>
   <script src="./script/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
+
+
+
+
+<!-- 
+    min-h-screen: makes the section as tall as the section
+    flex flex-col: sets vertical stacking layout
+    justify-center / items-center: centers content vertically and horizonally 
+    text-center: centers text
+    px-4: adds side padding for mobile spacing 
+    text-4xl md:text-6xl: large heading, responsive(scales up on medium+screens)
+    text-2xl md:text-2xl: slightly smaller than the heading, scales up 
+    font-heading: motserrat font
+    mb-4: margin below for spacing 
+    text-{#007BFF}: accent blue for "software dev" - first test
+    text-[#FFC300]: deep gold colour from the palette - first test
+    text-gray-400: softwre contrast for body tone
+    max-w-xl: keeps line length readable on large screen
+    mb-2 / mb-6: Margin spacing for flow
+    Body background - bg-[#0F172A]
+Main H1 text text-[#F5F5F5]
+Role title (dev) or CTA buttons text-[#007BFF] or bg-[#007BFF]
+Motto / sub tagline text-[#FFD54F] or text-[#A5A5A5]
+General paragraph or subtle info text-[#A5A5A5]
+
+  AOS (Animate on scroll) - lightweight, smooth, and tailwind friendly. 
+Optional AOS Styles You Can Try - 
+fade-up
+zoom-in
+flip-left
+slide-right
+
+-->
