@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zak Hajjaji, Software Developer portfolio showcasing clean, modern projects built with JavaScript, Tailwind CSS, and creative problem-solving." />
   <title>Zak's Blueprint</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -18,10 +19,16 @@
     h3 {
       font-family: 'Montserrat', sans-serif;
     }
+    html {
+  scroll-behavior: smooth;
+}
   </style>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+ 
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> -->
+
 </head>
 
 <body class="bg-[#0F172A] text-[#F5F5F5]">
@@ -37,12 +44,17 @@
 
     <div class="flex flex-col sm:flex-row gap-4 mt-6">
       <a
-        class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">View
-        My Work</a>
+      href="#projects"
+      class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
+      View My Work
+    </a>
+    
+    <a
+      href="#contact"
+      class="border border-[#6552D0] text-[#6552D0] px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:text-white hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
+      Contact Me
+    </a>
 
-      <a
-        class="border border-[#6552D0] text-[#6552D0] px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:text-white hover:shadow-lg hover:-translate-y-1 transform transition duration-300">Contact
-        Me</a>
     </div>
     <!-- <a class="mt-10 animate-bounce text-3xl text-[#A5A5A5]">↓</a> -->
     <div class="mt-10 animate-bounce">
@@ -53,6 +65,10 @@
     </div>
   </section>
 
+  <div class="mt-10 animate-bounce text-3xl text-[#a5a5a5]">
+
+  </div>
+
   <!-- The About Zak blueprint section -->
   <section id="about" class="py-36 md:py-44 px-6 bg-[#0F172A] text-[#F5F5F5]">
     <div class="max-w-4xl mx-auto text-center mb-10" data-aos="fade-up">
@@ -60,48 +76,59 @@
       <p class="text-[#A5A5A5] text-lg max-w-2xl mx-auto"> Swipe through to know more about me.</p>
     </div>
 
-    <div class="swiper mySwiper max-w-3xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper mySwiperAbout max-w-3xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
       <div class="swiper-wrapper">
 
         <!-- Slide 1-->
         <div class="swiper-slide bg-[#1A2238] p-6 rounded-xl shadow-md mb-10">
           <h3 class="text-xl font-bold mb-2 text-[#6552D0]">Phase 1: The Leap</h3>
-          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">After exploring different roles, I realised I wasn't chasing a title; I was chasing alignment. I needed the freedom to think, build, and create things that actually meant something to me, and the people they serve.
+          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">After exploring different roles, I realised I
+            wasn't chasing a title; I was chasing alignment. I needed the freedom to think, build, and create things
+            that actually meant something to me, and the people they serve.
         </div>
 
         <!-- Slide 2-->
         <div class="swiper-slide bg-[#1A2238] p-6 rounded-xl shadow-md mb-10">
           <h3 class="text-xl font-bold mb-2 text-[#6552D0]">Phase 2: The Craft </h3>
-          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">I design and develop with clarity, function, and flow in mind. Everything I build is made to feel intuitive; structured right, easy to use, and free from noise.
+          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">I design and develop with clarity, function,
+            and flow in mind. Everything I build is made to feel intuitive; structured right, easy to use, and free from
+            noise.
           </p>
         </div>
 
         <!-- Slide 3-->
         <div class="swiper-slide bg-[#1A2238] p-6 rounded-xl shadow-md mb-10">
           <h3 class="text-xl font-bold mb-2 text-[#6552D0]">Phase 3: The Foundation</h3>
-          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed"><p>
-            It is about showing up better, always staying calm, listening well, and adapt when things shift. I carry myself with intent and stick to the blueprint, even as the path evolves.
-            </p>
+          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">
+          <p>
+            It is about showing up better, always staying calm, listening well, and adapt when things shift. I carry
+            myself with intent and stick to the blueprint, even as the path evolves.
+          </p>
           </p>
         </div>
 
         <!-- Slide 4-->
         <div class="swiper-slide bg-[#1A2238] p-6 rounded-xl shadow-md mb-10">
           <h3 class="text-xl font-bold mb-2 text-[#6552D0]">Phase 4: The Building Blocks</h3>
-          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">Every challenge adds depth. Every build sharpens focus. I'm not just pushing projects; I'm laying bricks for something bigger, with patience and intention. </p>
+          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">Every challenge adds depth. Every build
+            sharpens focus. I'm not just pushing projects; I'm laying bricks for something bigger, with patience and
+            intention. </p>
         </div>
 
         <!-- Slide 5-->
         <div class="swiper-slide bg-[#1A2238] p-6 rounded-xl shadow-md mb-10">
           <h3 class="text-xl font-bold mb-2 text-[#6552D0]">Phase 5: The Showroom</h3>
-          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed"> This site was built with HTML, JavaScript, and Tailwind CSS. Structured with intention, not just to look good, but to work well. I'm now exploring React, Next.js, and APIs to take my skills further, and make things that move and mean something.
-        </p>
+          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed"> This site was built with HTML, JavaScript, and
+            Tailwind CSS. Structured with intention, not just to look good, but to work well. I'm now exploring React,
+            Next.js, and APIs to take my skills further, and make things that move and mean something.
+          </p>
         </div>
 
         <!-- Slide 6-->
         <div class="swiper-slide bg-[#1A2238] p-6 rounded-xl shadow-md mb-10">
           <h3 class="text-xl font-bold mb-2 text-[#6552D0]">Phase 6: Open Blueprint</h3>
-          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed"> The blueprint is still evolving, and that is the point. If anything here resonates, let's make something meaningful together,
+          <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed"> The blueprint is still evolving, and that is
+            the point. If anything here resonates, let's make something meaningful together,
             something that matters.</p>
         </div>
 
@@ -130,13 +157,14 @@
         <img src="assets/The Bank Encoder.png" alt="Screenshot of the bank encoder"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Bank Encoder</h3>
-        <p class="text-[#A5A5A5] text-sm mb-4">A lightweight JavaScript app that scrambles transaction data using string methods and input masking; clean, fast, and built with security in mind</p>
+        <p class="text-[#A5A5A5] text-sm mb-4">A lightweight JavaScript app that scrambles transaction data using string
+          methods and input masking; clean, fast, and built with security in mind</p>
         <a href="https://funkmafia.github.io/caesar-cypher-app-/" target="_blank" rel="noopener"
           class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
-          <div class="flex flex-wrap gap-2 mt-2">
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
-          </div>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
+        </div>
       </div>
 
 
@@ -145,13 +173,14 @@
         <img src="assets/Riddle me this screenshot.png" alt="Screenshot of Batman vs Riddler Game"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Batman vs Riddler Game</h3>
-        <p class="text-[#A5A5A5] text-sm mb-4">A browser-based puzzle game built with conditional logic and timers. Step into Batman's boots to solve riddles and outsmart The Riddler...One room at a time. </p>
+        <p class="text-[#A5A5A5] text-sm mb-4">A browser-based puzzle game built with conditional logic and timers. Step
+          into Batman's boots to solve riddles and outsmart The Riddler...One room at a time. </p>
         <a href="https://funkmafia.github.io/batman-vs-riddler/" target="_blank" rel="noopener"
           class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
-          <div class="flex flex-wrap gap-2 mt-2">
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
-          </div>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
+        </div>
       </div>
 
       <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up"
@@ -159,13 +188,14 @@
         <img src="assets/calculator screenshot.png" alt="Screenshot of quick calculator"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Simple Calculator</h3>
-        <p class="text-[#A5A5A5] text-sm mb-4">A responsive calculator with real-time output, error handling, and smooth interactions; built in vanilla JavaScript for performance and clarity.</p>
+        <p class="text-[#A5A5A5] text-sm mb-4">A responsive calculator with real-time output, error handling, and smooth
+          interactions; built in vanilla JavaScript for performance and clarity.</p>
         <a href="https://funkmafia.github.io/Calculator/" target="_blank" rel="noopener"
           class="text-[#6552D0] font-semibold hover:underline">View Project →</a>
-          <div class="flex flex-wrap gap-2 mt-2">
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
-          </div>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
+        </div>
       </div>
 
       <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up"
@@ -173,14 +203,15 @@
         <img src="./assets/projectname.jpg" alt="Screenshot of Project Name"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Gym Planner App</h3>
-        <p class="text-[#A5A5A5] text-sm mb-4">A smart workout planner that lets users pick muscle groups, create routines, and save progress. Built with localStorage; future-ready for AI integration</p>
+        <p class="text-[#A5A5A5] text-sm mb-4">A smart workout planner that lets users pick muscle groups, create
+          routines, and save progress. Built with localStorage; future-ready for AI integration</p>
         <a href="" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project
           →</a>
-          <div class="flex flex-wrap gap-2 mt-2">
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">localStorage</span>
-          </div>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">localStorage</span>
+        </div>
       </div>
 
       <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up"
@@ -188,15 +219,16 @@
         <img src="./assets/projectname.jpg" alt="Screenshot of Project Name"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Secure Notes Vault</h3>
-        <p class="text-[#A5A5A5] text-sm mb-4">A note vault with password access, localStorage, and simple encryption ... Your thoughts, kept private with style.
+        <p class="text-[#A5A5A5] text-sm mb-4">A note vault with password access, localStorage, and simple encryption
+          ... Your thoughts, kept private with style.
           support, and stylish UI animations.</p>
         <a href="" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project
           →</a>
-          <div class="flex flex-wrap gap-2 mt-2">
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">localStorage</span>
-          </div>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">localStorage</span>
+        </div>
       </div>
 
       <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up"
@@ -204,23 +236,145 @@
         <img src="./assets/projectname.jpg" alt="Screenshot of Project Name"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Client Propoasal Generator</h3>
-        <p class="text-[#A5A5A5] text-sm mb-4">A tool that turns client input into a styled PDF proposal; quick to use, easy to scale. Powered by form logic and jsPDF.</p>
+        <p class="text-[#A5A5A5] text-sm mb-4">A tool that turns client input into a styled PDF proposal; quick to use,
+          easy to scale. Powered by form logic and jsPDF.</p>
         <a href="" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project
           →</a>
-          <div class="flex flex-wrap gap-2 mt-2">
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
-            <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">localStorage</span>
-          </div>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">Tailwind</span>
+          <span class="bg-[#394E6A] text-white text-xs px-2 py-1 rounded">localStorage</span>
+        </div>
       </div>
     </div>
 
   </section>
-  <script src="./script/main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+ <!-- The stack and the standard !! -->
+ <section id="stack" class="py-24 px-6 bg-[#0F172A] text-[#F5F5F5]">
+  <div class="max-w-5xl mx-auto text-center mb-12" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">The Stack & The Standard</h2>
+    <p class="text-[#A5A5A5] text-lg max-w-3xl mx-auto">The tools, and the principles I code by.</p>
+  </div>
+
+  <!-- skils grid-->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">HTML</div>
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">CSS & TailWindCSS</div>
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">JavaScript</div>
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">Git & GitHub</div>
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">Firebase</div>
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">APIs & JSON</div>
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">React - in progress</div>
+    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">NEXT.JS - in progress</div>
+  </div>
+
+  <!-- Blueprint Principles -->
+<div class="mt-20 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+  <h3 class="text-2xl font-heading font-semibold text-center text-[#6552D0] mb-10">The Blueprint Principles</h3>
+  <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+
+    <!-- Principle 1 -->
+    <div class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
+      <div>
+        <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Build with Intention</h4>
+        <p class="text-[#A5A5A5] text-base">I don't build to show off or without purpose, my intentions are always build to solve. If you want to see how I think and break things down, the blog's got the raw notes.</p>
+      </div>
+      <a href="#" target="_blank" class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Read My Blog →</a>
+    </div>
+
+    <!-- Principle 2 -->
+    <div class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
+      <div>
+        <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Show Up with Substance</h4>
+        <p class="text-[#A5A5A5] text-base">I keep things clean, structured, and consistent. The details show in the work, and grab the CV and see where I've been and what I bring to the table.</p>
+      </div>
+      <a href="assets/Zak_Hajjaji_CV.pdf" download class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Download My CV →</a>
+    </div>
+
+    <!-- Principle 3 -->
+    <div class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
+      <div>
+        <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Create with Meaning</h4>
+        <p class="text-[#A5A5A5] text-base">If you're curious about how I turn all this into real things - the projects are where to start.</p>
+      </div>
+      <a href="#projects" class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Explore My Projects →</a>
+    </div>
+
+  </div>
+</div>
+ </section>
+</section>
+
+<section id="featureWall" class="py-20 px-6 bg-[#1A2238] text-[#F5F5F5]"> 
+  <div class="max-w-4xl mx-auto text-center mb-10" data-aos="fade-up">
+    <h2 class="text-2xl md:text-3xl font-heading font-bold mb-4">Blueprint In Action</h2>
+    <p class="text-[#A5A5A5] text-lg max-w-2xl mx-auto">
+      A deeper look into how I bring a project to life. From the concept, pulling out my hair, and to the final build.
+    </p>
+    </div>
+
+    <div class="swiper mySwiper max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper-wrapper">
+     
+    
+</section>
+
+<!-- ContactSection -->
+<section id="contact" class="py-20 px-6 bg-[#0F172A] text-[#F5F5F5]"> 
+  <div class="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
+    <h2 class="text-3xl md: text-4xl font-heading font-bold mb-4">Let's Connect!</h2>
+    <p class="text-[#A5A5A5] text-lg">If you have a question, a project idea, or just want to say hello ... drop me a line below. </p>
+  </div>
+
+  <!-- submission form -->
+   <form id="form" class="max-w-2xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100" netlify>
+      <div>
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]">
+      </div>
+
+      <div>
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]">
+      </div>
+
+      <div>
+        <textarea placeholder="Your Message" name="message" rows="5" required class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]"></textarea>
+      </div>
+      <button id="submit" type="submit" class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
+        Send Message
+      </button>
+   </form>
+
+
+     <!-- ways to connect -->
+     <div class="mt-12 flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://github.com/funkmafia" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
+        <i class="fab fa-github text-xl"></i> GitHub
+      </a>
+      <a href="#" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
+        <i class="fab fa-linkedin text-xl"></i> LinkedIn
+      </a>
+      <a href="mailto:zak@zakblueprint.com" class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
+        <i class="fas fa-envelope text-xl"></i> zak@zakblueprint.com
+      </a>
+    </div>
+     </section>
+
+<footer class="text-center text-sm text-[#A5A5A5] py-6">
+  © Zak Hajjaji 🍊 Funk Mafia - Blueprint built with clarity & coffee 
+</footer>
+
+  <script src="script/main.js">
+
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+    
+  </script>
   <script>
-    const swiper = new Swiper('.mySwiper', {
+    const swiperAbout = new Swiper('.mySwiperAbout', {
       loop: true,
       spaceBetween: 20,
       pagination: {
@@ -228,17 +382,19 @@
         clickable: true,
       },
     });
+    // Optionally, initialise the feature wall swiper separately when it's ready:
+    // const swiperWall = new Swiper('.mySwiperWall', { ... });
   </script>
   <script>
     AOS.init();
   </script>
+  <!-- below is font for icons, good reviews -->
+  <script src="https://kit.fontawesome.com/your-kit-id.js" 
+  crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
-
-
-
-
 <!-- 
     min-h-screen: makes the section as tall as the section
     flex flex-col: sets vertical stacking layout
