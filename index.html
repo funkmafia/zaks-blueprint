@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Zak Hajjaji, Software Developer portfolio showcasing clean, modern projects built with JavaScript, Tailwind CSS, and creative problem-solving." />
+  <meta name="description"
+    content="Zak Hajjaji, Software Developer portfolio showcasing clean, modern projects built with JavaScript, Tailwind CSS, and creative problem-solving." />
   <title>Zak's Blueprint</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -19,20 +20,37 @@
     h3 {
       font-family: 'Montserrat', sans-serif;
     }
+
     html {
-  scroll-behavior: smooth;
-}
+      scroll-behavior: smooth;
+    }
   </style>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
- 
+
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> -->
 
 </head>
 
 <body class="bg-[#0F172A] text-[#F5F5F5]">
-  <section CLASS="min-h-screen flex flex-col justify-center items-center text-center px-4">
+<!-- Stick Nav bar-->
+ <header class="sticky top-0 z-50 bg-[#0F172A] bg-opacity-90 backdrop-blue-md shadow-md">
+  <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center" aria-label="Main Navigation">
+    <a href="" class="text-xl font-bold text-[#6552D0]">🍊</a>
+    <ul class="flex gap-6 text-sm font-semibold text-[#F5F5F5]">
+      <li><a href="#about" class="hover:text-[#6552D0] transition">About</a></li>
+      <li><a href="#projects" class="hover:text-[#6552D0] transition">Projects</a></li>
+      <li><a href="#stack" class="hover:text-[#6552D0] transition">Stack</a></li>
+      <li><a href="#spotlight" class="hover:text-[#6552D0] transition">Spotlight</a></li>
+      <li><a href="#contact" class="hover:text-[#6552D0] transition">Contact</a></li>
+    </ul>
+  </nav>
+ </header>
+
+
+
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
     <!-- HERO CONTENT-->
     <h1 class="text-2xl sm:text-4xl lg:text-6xl font-bold font-heading mb-4 leading-tight text-[#F5F5F5]">
       Zak Hajjaji 🍊 <span class="text-[#6552D0]">Software Developer</span>
@@ -43,17 +61,15 @@
          -->
 
     <div class="flex flex-col sm:flex-row gap-4 mt-6">
-      <a
-      href="#projects"
-      class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
-      View My Work
-    </a>
-    
-    <a
-      href="#contact"
-      class="border border-[#6552D0] text-[#6552D0] px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:text-white hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
-      Contact Me
-    </a>
+      <a href="#projects"
+        class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
+        View My Work
+      </a>
+
+      <a href="#contact"
+        class="border border-[#6552D0] text-[#6552D0] px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:text-white hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
+        Contact Me
+      </a>
 
     </div>
     <!-- <a class="mt-10 animate-bounce text-3xl text-[#A5A5A5]">↓</a> -->
@@ -200,7 +216,7 @@
 
       <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up"
         data-aos-delay="300">
-        <img src="./assets/projectname.jpg" alt="Screenshot of Project Name"
+        <img src="assets/gymplanner_placeholder.png" alt="Screenshot of Project placeholder"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Gym Planner App</h3>
         <p class="text-[#A5A5A5] text-sm mb-4">A smart workout planner that lets users pick muscle groups, create
@@ -216,7 +232,7 @@
 
       <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up"
         data-aos-delay="400">
-        <img src="./assets/projectname.jpg" alt="Screenshot of Project Name"
+        <img src="assets/secure_notes_vault_padlock.jpg" alt="Screenshot of Project placeholder"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Secure Notes Vault</h3>
         <p class="text-[#A5A5A5] text-sm mb-4">A note vault with password access, localStorage, and simple encryption
@@ -233,7 +249,7 @@
 
       <div class="bg-[#0F172A] rounded-xl shadow-md p-6 hover:scale-[1.02] transition duration-300" data-aos="fade-up"
         data-aos-delay="500">
-        <img src="./assets/projectname.jpg" alt="Screenshot of Project Name"
+        <img src="assets/client_proposal_placeholder.jpg" alt="Screenshot of Project placeholder"
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Client Propoasal Generator</h3>
         <p class="text-[#A5A5A5] text-sm mb-4">A tool that turns client input into a styled PDF proposal; quick to use,
@@ -250,129 +266,171 @@
 
   </section>
 
- <!-- The stack and the standard !! -->
- <section id="stack" class="py-24 px-6 bg-[#0F172A] text-[#F5F5F5]">
-  <div class="max-w-5xl mx-auto text-center mb-12" data-aos="fade-up">
-    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">The Stack & The Standard</h2>
-    <p class="text-[#A5A5A5] text-lg max-w-3xl mx-auto">The tools, and the principles I code by.</p>
-  </div>
-
-  <!-- skils grid-->
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">HTML</div>
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">CSS & TailWindCSS</div>
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">JavaScript</div>
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">Git & GitHub</div>
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">Firebase</div>
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">APIs & JSON</div>
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">React - in progress</div>
-    <div class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">NEXT.JS - in progress</div>
-  </div>
-
-  <!-- Blueprint Principles -->
-<div class="mt-20 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-  <h3 class="text-2xl font-heading font-semibold text-center text-[#6552D0] mb-10">The Blueprint Principles</h3>
-  <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
-
-    <!-- Principle 1 -->
-    <div class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
-      <div>
-        <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Build with Intention</h4>
-        <p class="text-[#A5A5A5] text-base">I don't build to show off or without purpose, my intentions are always build to solve. If you want to see how I think and break things down, the blog's got the raw notes.</p>
-      </div>
-      <a href="#" target="_blank" class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Read My Blog →</a>
+  <!-- The stack and the standard !! -->
+  <section id="stack" class="py-24 px-6 bg-[#0F172A] text-[#F5F5F5]">
+    <div class="max-w-5xl mx-auto text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">The Stack & The Standard</h2>
+      <p class="text-[#A5A5A5] text-lg max-w-3xl mx-auto">The tools, and the principles I code by.</p>
     </div>
 
-    <!-- Principle 2 -->
-    <div class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
-      <div>
-        <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Show Up with Substance</h4>
-        <p class="text-[#A5A5A5] text-base">I keep things clean, structured, and consistent. The details show in the work, and grab the CV and see where I've been and what I bring to the table.</p>
-      </div>
-      <a href="assets/Zak_Hajjaji_CV.pdf" download class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Download My CV →</a>
+    <!-- skils grid-->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16" data-aos="fade-up"
+      data-aos-delay="100">
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        HTML</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        CSS & TailWindCSS</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        JavaScript</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        Git & GitHub</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        Firebase</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        APIs & JSON</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        React - in progress</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        NEXT.JS - in progress</div>
     </div>
 
-    <!-- Principle 3 -->
-    <div class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
-      <div>
-        <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Create with Meaning</h4>
-        <p class="text-[#A5A5A5] text-base">If you're curious about how I turn all this into real things - the projects are where to start.</p>
+    <!-- Blueprint Principles -->
+    <div class="mt-20 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-2xl font-heading font-semibold text-center text-[#6552D0] mb-10">The Blueprint Principles</h3>
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+
+        <!-- Principle 1 -->
+        <div
+          class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
+          <div>
+            <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Build with Intention</h4>
+            <p class="text-[#A5A5A5] text-base">I don't build to show off or without purpose, my intentions are always
+              build to solve. If you want to see how I think and break things down, the blog's got the raw notes.</p>
+          </div>
+          <a href="#" target="_blank" class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Read My
+            Blog →</a>
+        </div>
+
+        <!-- Principle 2 -->
+        <div
+          class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
+          <div>
+            <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Show Up with Substance</h4>
+            <p class="text-[#A5A5A5] text-base">I keep things clean, structured, and consistent. The details show in the
+              work, and grab the CV and see where I've been and what I bring to the table.</p>
+          </div>
+          <a href="assets/Zak_Hajjaji_CV.pdf" download
+            class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Download My CV →</a>
+        </div>
+
+        <!-- Principle 3 -->
+        <div
+          class="bg-[#1A2238] p-6 rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 hover:scale-105 ease-in-out">
+          <div>
+            <h4 class="text-xl font-bold mb-2 text-[#F5F5F5]">Create with Meaning</h4>
+            <p class="text-[#A5A5A5] text-base">If you're curious about how I turn all this into real things - the
+              projects are where to start.</p>
+          </div>
+          <a href="#projects" class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Explore My Projects
+            →</a>
+        </div>
+
       </div>
-      <a href="#projects" class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Explore My Projects →</a>
+    </div>
+  </section>
+  </section>
+
+  <section id="spotlight" name="spotlight" class="py-24 px-6 bg-[#1A2238] text-[#F5F5F5]">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Spotlight Project</h2>
+        <p class="text-[#A5A5A5] text-lg max-w-2xl mx-auto">Where creativity met logic in a game of riddles, rules, and
+          rhythm.</p>
+      </div>
+
+      <div
+        class="bg-[#0F172A] rounded-xl shadow-xl overflow-hidden flex flex-col lg:flex-row items-center gap-8 p-6 md:p-12"
+        data-aos="fade-up" data-aos-delay="100">
+        <div class="w-full lg:w-1/2">
+          <img src="assets/batman_vs_riddler_demo.gif" alt="Batman vs Riddler Game Preview"
+            class="rounded-lg object-cover w-full" />
+        </div>
+        <div class="w-full lg:w-1/2 text-left">
+          <h3 class="text-2xl font-bold text-[#6552D0] mb-4">Batman vs. Riddler</h3>
+          <p class="text-[#A5A5A5] text-base mb-6 leading-relaxed">
+            I wanted this game to feel like more than just clicking through levels. The idea was to pull the user into
+            an escape-room scenario; full of suspense, logic, and decision-making. Something that will make you have to
+            think on your feet, like Batman. All done by using JavaScript timers, conditional flows, and modular logic;
+            I built a browser-based riddle game that pushed me to balance gameplay, UX, and speed.
+          </p>
+          <a href="https://funkmafia.github.io/batman-vs-riddler/" target="_blank" rel="noopener"
+            class="inline-block bg-[#6552D0] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#7B69E6] transition duration-300">
+            Play the Game →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ContactSection -->
+  <section id="contact" class="py-20 px-6 bg-[#0F172A] text-[#F5F5F5]">
+    <div class="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md: text-4xl font-heading font-bold mb-4">Let's Connect!</h2>
+      <p class="text-[#A5A5A5] text-lg">If you have a question, a project idea, or just want to say hello ... drop me a
+        line below. </p>
     </div>
 
-  </div>
-</div>
- </section>
-</section>
-
-<section id="featureWall" class="py-24 px-6 bg-[#1A2238] text-[#F5F5F5]">
-  <div class="max-w-5xl mx-auto">
-    <div class="text-center mb-16" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Spotlight Project</h2>
-      <p class="text-[#A5A5A5] text-lg max-w-2xl mx-auto">Where creativity met logic in a game of riddles, rules, and rhythm.</p>
-    </div>
-
-    <div class="bg-[#0F172A] rounded-xl shadow-xl overflow-hidden flex flex-col lg:flex-row items-center gap-8 p-6 md:p-12" data-aos="fade-up" data-aos-delay="100">
-      <div class="w-full lg:w-1/2">
-        <img src="assets/batman_vs_riddler_demo.gif" alt="Batman vs Riddler Game Preview" class="rounded-lg object-cover w-full" />
-      </div>
-      <div class="w-full lg:w-1/2 text-left">
-        <h3 class="text-2xl font-bold text-[#6552D0] mb-4">Batman vs. Riddler</h3>
-        <p class="text-[#A5A5A5] text-base mb-6 leading-relaxed">
-          I wanted this game to feel like more than just clicking through levels. The idea was to pull the user into an escape-room scenario; full of suspense, logic, and decision-making. Something that will make you have to think on your feet, like Batman. All done by using JavaScript timers, conditional flows, and modular logic; I built a browser-based riddle game that pushed me to balance gameplay, UX, and speed. 
-        </p>
-        <a href="https://funkmafia.github.io/batman-vs-riddler/" target="_blank" rel="noopener" class="inline-block bg-[#6552D0] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#7B69E6] transition duration-300">
-          Play the Game →
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ContactSection -->
-<section id="contact" class="py-20 px-6 bg-[#0F172A] text-[#F5F5F5]"> 
-  <div class="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
-    <h2 class="text-3xl md: text-4xl font-heading font-bold mb-4">Let's Connect!</h2>
-    <p class="text-[#A5A5A5] text-lg">If you have a question, a project idea, or just want to say hello ... drop me a line below. </p>
-  </div>
-
-  <!-- submission form -->
-   <form id="form" class="max-w-2xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100" netlify>
+    <!-- submission form -->
+    <form id="form" class="max-w-2xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100" netlify>
       <div>
-        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]">
+        <input type="text" name="name" placeholder="Your Name" required
+          class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]">
       </div>
 
       <div>
-        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]">
+        <input type="email" name="email" placeholder="Your Email" required
+          class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]">
       </div>
 
       <div>
-        <textarea placeholder="Your Message" name="message" rows="5" required class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]"></textarea>
+        <textarea placeholder="Your Message" name="message" rows="5" required
+          class="w-full px-4 py-3 rounded-md bg-[#1A2238] text-white border border-[#394E6A] focus:outline-none focus:ring-2 focus:ring-[#6552D0]"></textarea>
       </div>
-      <button id="submit" type="submit" class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
+      <button id="submit" type="submit"
+        class="bg-[#6552D0] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#6552D0] hover:shadow-lg hover:-translate-y-1 transform transition duration-300">
         Send Message
       </button>
-   </form>
+    </form>
 
 
-     <!-- ways to connect -->
-     <div class="mt-12 flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
-      <a href="https://github.com/funkmafia" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
+    <!-- ways to connect -->
+    <div class="mt-12 flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://github.com/funkmafia" target="_blank" rel="noopener"
+        class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
         <i class="fab fa-github text-xl"></i> GitHub
       </a>
-      <a href="#" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
+      <a href="#" target="_blank" rel="noopener"
+        class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
         <i class="fab fa-linkedin text-xl"></i> LinkedIn
       </a>
-      <a href="mailto:zak@zakblueprint.com" class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
+      <a href="mailto:zak@zakblueprint.com"
+        class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
         <i class="fas fa-envelope text-xl"></i> zak@zakblueprint.com
       </a>
     </div>
-     </section>
+  </section>
 
-<footer class="text-center text-sm text-[#A5A5A5] py-6">
-  © Zak Hajjaji 🍊 Funk Mafia - Blueprint built with clarity & coffee 
-</footer>
+  <footer class="text-center text-sm text-[#A5A5A5] py-6">
+    © Zak Hajjaji 🍊 Funk Mafia - Blueprint built with clarity & coffee
+  </footer>
 
   <script src="script/main.js">
 
@@ -381,7 +439,7 @@
 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
-    
+
   </script>
   <script>
     const swiperAbout = new Swiper('.mySwiperAbout', {
@@ -399,8 +457,7 @@
     AOS.init();
   </script>
   <!-- below is font for icons, good reviews -->
-  <script src="https://kit.fontawesome.com/your-kit-id.js" 
-  crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous">
   </script>
 </body>
 
