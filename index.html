@@ -28,7 +28,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.ico">
   <!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> -->
 
 </head>
@@ -38,7 +38,13 @@
  <header id= "navBar" class="sticky top-0 z-50 bg-[#0F172A] bg-opacity-90 backdrop-blue-md shadow-md">
   <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center" aria-label="Main Navigation">
     <a href="" class="text-xl font-bold text-[#6552D0]">🍊</a>
-    <ul class="flex gap-6 text-sm font-semibold text-[#F5F5F5]">
+
+    <!-- for MOBILE -->
+    <button aria-label="Open menu" type="button" id="menu-button" class="md:hidden text-white text-2xl focus:outline-none">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul id="navLinks" class="flex flex-col md:flex-row gap-6 justify-center transition-all duration-500 overflow-hidden max-h-0 md:max-h-full md:flex">
       <li><a href="#about" class="hover:text-[#6552D0] transition">About</a></li>
       <li><a href="#projects" class="hover:text-[#6552D0] transition">Projects</a></li>
       <li><a href="#stack" class="hover:text-[#6552D0] transition">Stack</a></li>
@@ -48,7 +54,15 @@
   </nav>
  </header>
 
-
+<!--NAV BAR TIPS for nav bar mobiles 
+md:flex - Show nav links as flex on desktop and larger
+flex-col md:flex-row - Stack links vertically on mobile, horizontally on desktop
+gap-6 -Add clean spacing between items
+max-h-0 - Collapse the nav menu (starting state)
+max-h-[300px] - Expand the nav menu with animation
+overflow-hidden- prevent the dropdown from spilling out
+transition-all duration-500 - Smooth height animation over 0.5s
+-->
 
   <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
     <!-- HERO CONTENT-->
@@ -116,10 +130,8 @@
         <div class="swiper-slide bg-[#1A2238] p-6 rounded-xl shadow-md mb-10">
           <h3 class="text-xl font-bold mb-2 text-[#6552D0]">Phase 3: The Foundation</h3>
           <p class="text-[#A5A5A5] text-base md:text-lg leading-relaxed">
-          <p>
             It is about showing up better, always staying calm, listening well, and adapt when things shift. I carry
             myself with intent and stick to the blueprint, even as the path evolves.
-          </p>
           </p>
         </div>
 
@@ -457,9 +469,12 @@
   <script>
     AOS.init();
   </script>
+</head>
   <!-- below is font for icons, good reviews -->
-  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous">
-  </script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 </body>
 
 </html>

@@ -3,6 +3,8 @@ const navSection = document.getElementById('navBar');
 const heroSection = document.getElementById('hero'); 
 const projectSection = document.getElementById('project'); 
 const spotlightSection = document.getElementById('spotlight'); 
+const navMenu = document.getElementById('menu-button')
+const navLinks = document.getElementById('navLinks')
 
 const form = document.getElementById('form'); 
 const nameInput = document.querySelector('input[name="name"]');
@@ -25,6 +27,32 @@ const feedback = document.getElementById('form-feedback'); // feedback to user
     }
 }); 
     } 
+
+// Animating the slide toggle NEW . max-h-0 heigh to zero, max-h-[300px] allows the content to expand vertically
+// transition-all+duration-500 - so smooth transition over 500ms 
+
+    navMenu.addEventListener("click", function() {
+       
+        navLinks.classList.toggle("max-h-0"); 
+        navLinks.classList.toggle("max-h-[300px]"); 
+        navLinks.classList.toggle("transition-all"); 
+        navLinks.classList.toggle("duration-500"); 
+
+    const icon = navMenu.querySelector("i");
+        if (icon) {
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-xmark");
+        }
+    
+    // for improvement of accessibility 
+    const expanded = navLinks.contains("max-h-[300px]"); 
+    navMenu.setAttribute("aria-expanded", expanded);
+    
+}); 
+
+
+// classlist.toggle will: add the class if its not there, remove the class if IT IS there !! 
+// using the <i> inside the hamburger burger button / using the font awesome links
 
 // --- 4. Functions --- // 
 // forms and feedback of forms // 
@@ -64,3 +92,28 @@ function showSuccess(message) {
         alert(message); 
     }
 }
+
+
+
+
+
+
+/* 
+JAVASCRIPT TOGGLE LOGIC - 
+    Add a click listener to your hamburger button.
+	Toggle the nav menu’s visibility by adding/removing Tailwind classes:
+navLinks.classList.toggle("max-h-0");
+navLinks.classList.toggle("max-h-[300px]");
+*/ 
+
+/*
+    SWAP THE ICON (☰ to ✖) using:
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-xmark");
+*/ 
+
+/* clean code practices 
+    •	Keep selectors (getElementById, querySelector) at the top of your JS file.
+	•	Use meaningful class names and structure for readability.
+	•	Avoid combining hidden with max-height !! pick one strategy.
+*/
