@@ -34,27 +34,29 @@
 </head>
 
 <body class="bg-[#0F172A] text-[#F5F5F5]">
-<!-- Stick Nav bar-->
- <header id= "navBar" class="sticky top-0 z-50 bg-[#0F172A] bg-opacity-90 backdrop-blue-md shadow-md">
-  <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center" aria-label="Main Navigation">
-    <a href="" class="text-xl font-bold text-[#6552D0]">🍊</a>
+  <!-- Stick Nav bar-->
+  <header id="navBar" class="sticky top-0 z-50 bg-[#0F172A] bg-opacity-90 backdrop-blue-md shadow-md">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center" aria-label="Main Navigation">
+      <a href="" class="text-xl font-bold text-[#6552D0]">🍊</a>
 
-    <!-- for MOBILE -->
-    <button aria-label="Open menu" type="button" id="menu-button" class="md:hidden text-white text-2xl focus:outline-none">
-      <i class="fa-solid fa-bars"></i>
-    </button>
+      <!-- for MOBILE -->
+      <button aria-label="Open menu" type="button" id="menu-button"
+        class="md:hidden text-white text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-    <ul id="navLinks" class="flex flex-col md:flex-row gap-6 justify-center transition-all duration-500 overflow-hidden max-h-0 md:max-h-full md:flex">
-      <li><a href="#about" class="hover:text-[#6552D0] transition">About</a></li>
-      <li><a href="#projects" class="hover:text-[#6552D0] transition">Projects</a></li>
-      <li><a href="#stack" class="hover:text-[#6552D0] transition">Stack</a></li>
-      <li><a href="#spotlight" class="hover:text-[#6552D0] transition">Spotlight</a></li>
-      <li><a href="#contact" class="hover:text-[#6552D0] transition">Contact</a></li>
-    </ul>
-  </nav>
- </header>
+      <ul id="navLinks"
+        class="flex flex-col md:flex-row gap-6 justify-center transition-all duration-500 overflow-hidden max-h-0 md:max-h-full md:flex">
+        <li><a href="#about" class="hover:text-[#6552D0] transition">About</a></li>
+        <li><a href="#projects" class="hover:text-[#6552D0] transition">Projects</a></li>
+        <li><a href="#stack" class="hover:text-[#6552D0] transition">Stack</a></li>
+        <li><a href="#spotlight" class="hover:text-[#6552D0] transition">Spotlight</a></li>
+        <li><a href="#contact" class="hover:text-[#6552D0] transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!--NAV BAR TIPS for nav bar mobiles 
+  <!--NAV BAR TIPS for nav bar mobiles 
 md:flex - Show nav links as flex on desktop and larger
 flex-col md:flex-row - Stack links vertically on mobile, horizontally on desktop
 gap-6 -Add clean spacing between items
@@ -248,8 +250,7 @@ transition-all duration-500 - Smooth height animation over 0.5s
           class="rounded-md mb-4 object-cover h-40 w-full" />
         <h3 class="text-xl font-bold mb-2 text-[#F5F5F5]">Secure Notes Vault</h3>
         <p class="text-[#A5A5A5] text-sm mb-4">A note vault with password access, localStorage, and simple encryption
-          ... Your thoughts, kept private with style.
-          support, and stylish UI animations.</p>
+          ... Your thoughts, kept private with style.</p>
         <a href="" target="_blank" rel="noopener" class="text-[#6552D0] font-semibold hover:underline">View Project
           →</a>
         <div class="flex flex-wrap gap-2 mt-2">
@@ -285,33 +286,49 @@ transition-all duration-500 - Smooth height animation over 0.5s
       <p class="text-[#A5A5A5] text-lg max-w-3xl mx-auto">The tools, and the principles I code by.</p>
     </div>
 
-    <!-- skils grid-->
+    <!-- skills grid -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16" data-aos="fade-up"
       data-aos-delay="100">
+      <!-- Front-End -->
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
         HTML</div>
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
-        CSS & TailWindCSS</div>
+        CSS & TailwindCSS</div>
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
         JavaScript</div>
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
-        Git & GitHub</div>
+        TypeScript</div>
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
-        Firebase</div>
+        React</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        Next.js</div>
+      <!-- Back-End -->
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        Node.js</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        Express</div>
+      <div
+        class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
+        MongoDB</div>
+      <!-- APIs/Data -->
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
         APIs & JSON</div>
+      <!-- Tooling/Workflow -->
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
-        React - in progress</div>
+        Git & GitHub</div>
       <div
         class="bg-[#1A2238] p-4 mb-2 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 hover:scale-105 ease-in-out">
-        NEXT.JS - in progress</div>
+        Render (Deployment)</div>
     </div>
 
     <!-- Blueprint Principles -->
@@ -327,7 +344,8 @@ transition-all duration-500 - Smooth height animation over 0.5s
             <p class="text-[#A5A5A5] text-base">I don't build to show off or without purpose, my intentions are always
               build to solve. If you want to see how I think and break things down, the blog's got the raw notes.</p>
           </div>
-          <a href="#" target="_blank" class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Read My
+          <a href="https://funkmafia.github.io/My-Hobbies-Website/index.html" rel="noopener" target="_blank"
+            class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Read My
             Blog →</a>
         </div>
 
@@ -339,7 +357,7 @@ transition-all duration-500 - Smooth height animation over 0.5s
             <p class="text-[#A5A5A5] text-base">I keep things clean, structured, and consistent. The details show in the
               work, and grab the CV and see where I've been and what I bring to the table.</p>
           </div>
-          <a href="assets/Zak_Hajjaji_CV.pdf" download
+          <a href="assets/ZAK-HAJJAJI-JNR.SOFTWARE-DEV-CV.pdf" download target="_blank"
             class="mt-4 inline-block text-[#6552D0] font-semibold hover:underline">Download My CV →</a>
         </div>
 
@@ -430,7 +448,7 @@ transition-all duration-500 - Smooth height animation over 0.5s
         class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
         <i class="fab fa-github text-xl"></i> GitHub
       </a>
-      <a href="#" target="_blank" rel="noopener"
+      <a href="https://www.linkedin.com/in/zak-hajjaji-m-sc-cemap-939920111/" target="_blank" rel="noopener"
         class="flex items-center gap-2 px-4 py-3 bg-[#1A2238] rounded-md text-[#F5F5F5] hover:bg-[#394E6A] transition duration-300">
         <i class="fab fa-linkedin text-xl"></i> LinkedIn
       </a>
@@ -469,12 +487,9 @@ transition-all duration-500 - Smooth height animation over 0.5s
   <script>
     AOS.init();
   </script>
-</head>
+  </head>
   <!-- below is font for icons, good reviews -->
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </body>
 
 </html>
